@@ -10,8 +10,9 @@ $('button').click(function(event){
   var play_you = this.getAttribute("value");
   console.log(play_you);
   $('#play_you').text(play_you);
-  // var play_machine = computer_move();
-  // compare(play_you, play_machine);
+  var play_machine = computer_move();
+  compare(play_you, play_machine);
+  // score();
 });
 
 // $('#rock').click(function(event) {
@@ -44,42 +45,46 @@ function computer_move(){
   console.log('move: ' + play_machine);
 }
 
+// **********COMPARE FUNCTION TO REACH VERDICT**********
 function compare(you, machine){
-  var verdict = 'lose';
+  var verdict = '';
 
   if (you == machine) {
     verdict = 'draw';
   }
 
-  if ((you == 'paper') && (machine =='rock')) {
+  else if ((you == 'paper') && (machine =='rock')) {
     verdict = 'win';
   }
 
-  if ((you == 'rock') && (machine =='scissors')) {
+  else if ((you == 'rock') && (machine =='scissors')) {
     verdict = 'win';
   }
 
-  if ((you == 'scissors') && (machine =='paper')) {
+  else if ((you == 'scissors') && (machine =='paper')) {
     verdict = 'win';
-  }
-
-  if ( verdict == 'win'){
-    won++;
-    $('game_won').text(won)
-  }
-
-  if ( verdict == 'lose'){
-    lost++;
-    $('#game_lost').text(lost)
-  }
-
-  if ( verdict == 'draw'){
-    draw++;
-    $('#game_draw').text(draw);
   }
 
   $('#verdict').text(verdict);
+  played++;
+  $('#game_played').text(played);
 }
 
-played++;
-$('#game_played').text(played);
+
+// **********SWITCH STATEMENT FOR ADDING TO WON, LOST, DRAW, PLAYED**********
+switch (verdict) {
+  case 'win':
+  won++;
+  $('#won').text(won);
+  break;
+case 'lose':
+  lost++;
+  $('#lost').text(lost);
+  break;
+case 'draw':
+  draw++;
+  $('#draw').text(draw);
+  break;
+}
+
+// ?????MAKE THIS PRINT?????
