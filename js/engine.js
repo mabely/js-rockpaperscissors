@@ -6,31 +6,34 @@ var lost = 0;
 var draw = 0;
 
 // Listen for the button clicks
-// $('button').click(function(event){
-//   var play_you = this.getAttribute("value");
-//   console.log(play_you);
+$('button').click(function(event){
+  var play_you = this.getAttribute("value");
+  console.log(play_you);
+  $('#play_you').text(play_you);
+  // var play_machine = computer_move();
+  // compare(play_you, play_machine);
+});
+
+// $('#rock').click(function(event) {
+//   var move_you = 'rock';
+//   $('#play_you').text(move_you);
+//   var play_machine = computer_move();
+//   compare(play_you, play_machine);
 // });
-
-$('#rock').click(function(event) {
-  var move_you = 'rock';
-  $('#play_you').text(move_you);
-  var play_machine = computer_move();
-  compare(play_you, play_machine);
-});
-
-$('#paper').click(function(event){
-  var move_you = 'paper';
-  $('#play_you').text(move_you);
-  var play_machine = computer_move();
-  compare(play_you, play_machine);
-});
-
-$('#scissors').click(function(event){
-  var move_you = 'scissors';
-  $('#play_you').text(move_you);
-  var play_machine = computer_move();
-  compare(play_you, play_machine);
-});
+//
+// $('#paper').click(function(event){
+//   var move_you = 'paper';
+//   $('#play_you').text(move_you);
+//   var play_machine = computer_move();
+//   compare(play_you, play_machine);
+// });
+//
+// $('#scissors').click(function(event){
+//   var move_you = 'scissors';
+//   $('#play_you').text(move_you);
+//   var play_machine = computer_move();
+//   compare(play_you, play_machine);
+// });
 
 function computer_move(){
   var play_machine = Math.floor(Math.random() * (3 - 0)) + 0;
