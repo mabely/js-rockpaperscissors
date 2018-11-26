@@ -37,10 +37,16 @@ h1{
 }
 
 /* BUTTONS */
+/*NOT WORKING
+ @media screen and (max-width: 505px){
+  ul{
+    display: inherit;
 
+  }
+} */
 ul{
 position: absolute;
-top: 50%;
+top: 70%;
 left: 50%;
 transform: translate(-50%, -50%);
 margin: 0;
@@ -89,7 +95,7 @@ top: 80px;
 left: -11px;
 height: 20px;
 width: 100%;
-background: #b1b1b1;
+background: #E6D72A;
 transition: .5s;
 transform: rotate(0deg) skewX(-45deg);
 }
