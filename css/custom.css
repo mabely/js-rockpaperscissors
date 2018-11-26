@@ -7,14 +7,21 @@ h1{
   max-width: 200px;
   padding-left: 15px;
   padding-top: 10px;
+  /* float: left; */
+}
+#heading{
+  max-width: 350px;
+  margin-right: 0;
 }
 #verdict{
   font-size: 50px;
   text-align: center;
   display: block;
 }
-#plays{
-  padding: 30px;
+@media (max-width: 505px;){
+  #scoreboard{
+    clear: right;
+  }
 }
 #scoreboard h2{
   text-decoration: overline;
@@ -23,8 +30,6 @@ h1{
 }
 #scoreboard{
   padding: 20px;
-  float: right;
-  clear: both;
   background-color: #ccc;
   max-width: 250px;
 }
