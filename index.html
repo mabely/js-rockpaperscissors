@@ -18,40 +18,41 @@
 
 	<body>
 	<div id="wrapper">
+		<section id="heading">
+			<h1>Rock__ Paper____ Scissors________</h1>
+		</section>
 		<section id="scoreboard">
 			<h2>Scoreboard</h2>
-			<p>You won: <span id="game_won"></span></p>
-			<p>You lost: <span id="game_lost"></span></p>
-			<p>Draw: <span id="game_draw"></span></p>
-			<p>Total plays: <span id="game_played"></span></p>
+			<div id="plays">
+				<p>You: <span id="play_you"></span></p>
+				<p>Computer: <span id="play_machine"></span></p>
+			</div>
+			<div id="scores">
+				<div id="plays">
+				<p>You won: <span id="game_won"></span></p>
+				<p>You lost: <span id="game_lost"></span></p>
+				<p>Draw: <span id="game_draw"></span></p>
+				<p>Total plays: <span id="game_played"></span></p>
+			</div>
 		</section>
-		<h1>Rock__ Paper____ Scissors________</h1>
 
 		<section id="verdict">
 			<h2 id="verdict"> </h2>
 		</section>
-
-		<section id="plays">
-			<p>You: <span id="play_you"></span></p>
-			<p>Computer: <span id="play_machine"></span></p>
+		<section id="buttons">
+			<ul>
+			<li><a href="#"><i class="fa buttons fa-hand-rock-o" aria-hidden="true" value="rock" id="rock"></i></a></li>
+			<li><a href="#"><i class="fa buttons fa-hand-paper-o" aria-hidden="true" value="paper" id="paper"></i></a></li>
+			<li><a href="#"><i class="fa buttons fa-hand-scissors-o" aria-hidden="true" value="scissors" id="scissors"></i></a></li>
+			</ul>
 		</section>
-
-		<ul>
-		<li><a href="#"><i class="fa buttons fa-hand-rock-o" aria-hidden="true" value="rock" id="rock"></i></a></li>
-		<li><a href="#"><i class="fa buttons fa-hand-paper-o" aria-hidden="true" value="paper" id="paper"></i></a></li>
-		<li><a href="#"><i class="fa buttons fa-hand-scissors-o" aria-hidden="true" value="scissors" id="scissors"></i></a></li>
-		</ul>
-
-
-
-
 
 
 	</div><!--Closing /#wrapper-->
 
 <!-- jQuery, bootstrap bootstrap.min.js -->
 	<script
-		src="http://code.jquery.com/jquery-3.3.1.min.js"
+		src="https://code.jquery.com/jquery-3.3.1.min.js"
 		integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
 		crossorigin="anonymous">
 	</script>
