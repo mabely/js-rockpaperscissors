@@ -4,9 +4,10 @@ var played = 0;
 var won = 0;
 var lost = 0;
 var draw = 0;
+var selected = rock;
 
 // Listen for the button clicks
-$('button').click(function(event){
+$('.buttons').click(function(event){
   var play_you = this.getAttribute("value");
   console.log(play_you);
   $('#play_you').text(play_you);
@@ -14,6 +15,18 @@ $('button').click(function(event){
   compare(play_you, play_machine);
   score(verdict);
 });
+
+function holddown(play_you){
+  if (play_you == 'rock'){
+    $('#rock').css('background-color', 'red');
+  }
+  else if (play_you == 'paper'){
+    $('#paper').css('background-color', 'red');
+  }
+  else {
+    $('#scissors').css('background-color', 'red');
+  }
+}
 
 // $('#rock').click(function(event) {
 //   var move_you = 'rock';
@@ -53,23 +66,23 @@ function computer_move(){
 function compare(play_you, play_machine){
 
   if (play_you == play_machine) {
-    verdict = 'draw';
+    verdict = 'you draw';
   }
 
   else if ((play_you == 'paper') && (play_machine =='rock')) {
-    verdict = 'win';
+    verdict = 'you win';
   }
 
   else if ((play_you == 'rock') && (play_machine =='scissors')) {
-    verdict = 'win';
+    verdict = 'you win';
   }
 
   else if ((play_you == 'scissors') && (play_machine =='paper')) {
-    verdict = 'win';
+    verdict = 'you win';
   }
 
   else {
-    verdict = 'lose';
+    verdict = 'you lose';
   }
 
   console.log(verdict);
