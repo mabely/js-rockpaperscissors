@@ -111,44 +111,44 @@ transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(20px, -20px)
 box-shadow: -50px 50px 50px rgb(0, 0, 0, 0.5);
 }
 ul li:hover:nth-child(1) a{
-background: #3b5999;
+background: #E6D72A;
 }
 
 ul li:hover:nth-child(1) a:before{
-background: #2e4a86;
+background: #E6D72A;
 }
 ul li:hover:nth-child(1) a:after{
-background: #4a69ad;
+background: #E6D72A;
 }
 ul li:hover:nth-child(2) a{
-background: #55acee;
+background: #E6D72A;
 }
 ul li:hover:nth-child(2) a:before{
-background: #4184b7;
+background: #E6D72A;
 }
 ul li:hover:nth-child(2) a:after{
-background: #4d9fde;
+background: #E6D72A;
 }
 ul li:hover:nth-child(3) a{
-background: #dd4b39;
+background: #E6D72A;
 }
 
 ul li:hover:nth-child(3) a:before{
-background: #c13929;
+background: #E6D72A;
 }
 ul li:hover:nth-child(3) a:after{
-background: #e83322;
+background: #E6D72A;
 }
 
 ul li:hover:nth-child(4) a{
-background: #0077B5;
+background: #E6D72A;
 }
 
 ul li:hover:nth-child(4) a:before{
-background: #036aa0;
+background: #E6D72A;
 }
 ul li:hover:nth-child(4) a:after{
-background: #0d82bf;
+background: #E6D72A;
 }
 
 ul li:hover:nth-child(5) a{
