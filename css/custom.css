@@ -19,6 +19,9 @@ h1{
   font-size: 50px;
   text-align: center;
   display: block;
+  position: absolute;
+  top: 50%;
+  left: 45%;
 }
 @media (max-width: 505px;){
   #scoreboard{
@@ -34,6 +37,11 @@ h1{
   padding: 20px;
   background-color: #ccc;
   max-width: 250px;
+  margin-top: 30px;
+  margin-bottom: 70px;
+}
+#scoreboard p{
+  line-height: 8px;
 }
 
 /* BUTTONS */
@@ -46,7 +54,7 @@ h1{
 } */
 ul{
 position: absolute;
-top: 70%;
+/* top: 70%; */
 left: 50%;
 transform: translate(-50%, -50%);
 margin: 0;
