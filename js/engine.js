@@ -4,7 +4,7 @@ var played = 0;
 var won = 0;
 var lost = 0;
 var draw = 0;
-var selected = rock;
+var selected = '';
 
 // Listen for the button clicks
 $('.buttons').click(function(event){
@@ -66,23 +66,23 @@ function computer_move(){
 function compare(play_you, play_machine){
 
   if (play_you == play_machine) {
-    verdict = 'you draw';
+    verdict = 'draw';
   }
 
   else if ((play_you == 'paper') && (play_machine =='rock')) {
-    verdict = 'you win';
+    verdict = 'win';
   }
 
   else if ((play_you == 'rock') && (play_machine =='scissors')) {
-    verdict = 'you win';
+    verdict = 'win';
   }
 
   else if ((play_you == 'scissors') && (play_machine =='paper')) {
-    verdict = 'you win';
+    verdict = 'win';
   }
 
   else {
-    verdict = 'you lose';
+    verdict = 'lose';
   }
 
   console.log(verdict);
