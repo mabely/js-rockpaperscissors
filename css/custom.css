@@ -2,47 +2,54 @@ body{
   background-color: black;
   color: white;
 }
-section#heading{
-  margin: 0;
-}
+
 h1{
-  max-width: 200px;
+  max-width: 300px;
   padding-left: 15px;
   padding-top: 10px;
   /* float: left; */
 }
 #heading{
-  max-width: 350px;
+  max-width: 300px;
   margin-right: 0;
-}
-#verdict{
-  font-size: 50px;
-  text-align: center;
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 45%;
-}
-@media (max-width: 505px;){
-  #scoreboard{
-    clear: right;
-  }
 }
 #scoreboard h2{
   text-decoration: overline;
   padding-top: 10px;
   padding-bottom: 10px;
+  float: right;
+  clear: right;
 }
+
+
 #scoreboard{
   padding: 20px;
   background-color: #ccc;
-  max-width: 250px;
   margin-top: 30px;
   margin-bottom: 70px;
 }
 #scoreboard p{
   line-height: 8px;
 }
+#verdict{
+  font-size: 30px;
+  text-align: center;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 35%;
+}
+#verdict h2{
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  position: relative;
+}
+/* @media (max-width: 505px;){
+  #scoreboard{
+    clear: right;
+  }
+} */
+
 
 /* BUTTONS */
 /*NOT WORKING

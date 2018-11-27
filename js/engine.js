@@ -5,6 +5,7 @@ var won = 0;
 var lost = 0;
 var draw = 0;
 var selected = '';
+var verdict = '';
 
 // Listen for the button clicks
 $('.buttons').click(function(event){
@@ -86,7 +87,8 @@ function compare(play_you, play_machine){
   }
 
   console.log(verdict);
-  $('#verdict').text(verdict);
+  $('#verdict').text("you " + verdict);
+  $('#verdict').show();
   played++;
   $('#game_played').text(played);
   }
