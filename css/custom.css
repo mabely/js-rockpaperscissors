@@ -9,6 +9,11 @@ h1{
   padding-top: 10px;
   /* float: left; */
 }
+@media screen and (min-width: 992px){
+  h1{
+    font-size: 70px;
+  }
+}
 #heading{
   max-width: 300px;
   margin-right: 0;
@@ -25,7 +30,16 @@ h1{
 
 /* SCOREBOARD */
 #scoreboard{
-  padding-top: 100px;
+  padding: 20px;
+  padding-top: 30px;
+  background-color: #ccc;
+  /* margin-top: 30px;
+  margin-bottom: 70px; */
+}
+@media screen and (min-width: 992px){
+  #plays #scores{
+
+  }
 }
 #scoreboard h2{
   text-decoration: overline;
@@ -34,34 +48,32 @@ h1{
   float: right;
   clear: right;
 }
-#scoreboard{
-  padding: 20px;
-  padding-top: 30px;
-  background-color: #ccc;
-  /* margin-top: 30px;
-  margin-bottom: 70px; */
+@media screen and (min-width: 992px){
+  #scoreboard h2{
+    font-size: 50px;
+  }
 }
 #scoreboard p{
   line-height: 8px;
 }
-
-/* @media (max-width: 505px;){
-  #scoreboard{
-    clear: right;
+@media screen and (min-width: 992px){
+  #scoreboard p{
+    font-size: 25px;
+    line-height: 25px;
+    padding-left:
   }
-} */
+}
 
 
 /* BUTTONS */
-/*NOT WORKING
- @media screen and (max-width: 505px){
-  ul{
-    display: inherit;
-
-  }
-} */
 #buttons{
   margin-top: 35px;
+}
+
+@media screen and (min-width: 992px){
+  ul{
+    margin: 150px;
+  }
 }
 
 ul{
