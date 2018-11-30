@@ -88,7 +88,7 @@ function compare(play_you, play_machine){
 
   console.log(verdict);
   $('#verdict').text("You " + verdict);
-  $('#verdict').css({'color': '#E6D72A', 'font-size': '60px', 'text-decoration': 'underline', 'text-decoration-style': 'dotted', 'font-family': 'Pacifico'})
+  $('#verdict').css({'color': '#E6D72A', 'font-size': '60px', 'font-family': 'Pacifico'})
   played++;
   $('#game_played').text(played);
   }
