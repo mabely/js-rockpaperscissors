@@ -1,5 +1,4 @@
 var choices = ["rock", "paper", "scissors"];
-
 var played = 0;
 var won = 0;
 var lost = 0;
