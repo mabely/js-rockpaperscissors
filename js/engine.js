@@ -2,12 +2,13 @@ var choices = ["rock", "paper", "scissors"];
 var played = 0;
 var won = 0;
 var lost = 0;
+var draw = 0;
 
 // Listen for the button clicks
 $('.buttons').click(function(event){
   var play_you = this.getAttribute("value");
   $('#play_you').text(play_you);
-  console.log(play_you);
+  console.log('your move: ' + play_you);
   var play_machine = computer_move();
   compare(play_you, play_machine);
   score(verdict);
